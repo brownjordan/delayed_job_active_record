@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 gem "rake"
 
+gem 'delayed_job', github: 'brownjordan/delayed_job'
+
 group :test do
   platforms :jruby do
     gem 'activerecord-jdbcmysql-adapter', git: 'https://github.com/jruby/activerecord-jdbc-adapter', branch: 'rails-5'
